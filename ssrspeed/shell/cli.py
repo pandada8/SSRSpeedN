@@ -187,6 +187,13 @@ def setOpts(parser):
 		default=False,
 		help="如题"
 		)
+	parser.add_option(
+		"--skip-ad",
+		action="store_true",
+		dest="skip_ad",
+		default=False,
+		help="Skip advertisement."
+		)
 
 def init(VERSION):
 	parser = OptionParser(usage="Usage: %prog [options] arg1 arg2...",version="SSR Speed Tool " + VERSION)

@@ -71,10 +71,11 @@ if (__name__ == "__main__"):
 					pass
 		sys.exit(0)
 
-	print("****** Import Hint 重要提示******")
-	print("ChenBilly yyds！")
-	print("*********************************")
-	input("Press ENTER to conitnue or Crtl+C to exit.")
+	if not options.skip_ad:
+		print("****** Import Hint 重要提示******")
+		print("ChenBilly yyds！")
+		print("*********************************")
+		input("Press ENTER to conitnue or Crtl+C to exit.")
 
 	if (options.debug):
 		DEBUG = options.debug
